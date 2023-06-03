@@ -1,0 +1,41 @@
+-
+    event_id: 4720
+    code: T1078.003
+    attack_tactic: 'Initial access or Persistence'
+    attack_technique: 'Create or Use Valid Accounts: Local Accounts'
+    string_inserts: { new_user: 0, target_user: 4 }
+    scale: 4
+-
+    event_id: 4732
+    code: T1078.001
+    attack_tactic: 'Initial access'
+    attack_technique: 'Valid Accounts: Default Accounts'
+    string_inserts: { new_user: 2, target_user: 6 }
+    scale: 4
+-
+    event_id: 4781
+    code: T1098
+    attack_tactic: Persistence
+    attack_technique: 'Account Manipulation'
+    string_inserts: { old_user_name: 0, new_user_name: 4 }
+    scale: 4
+-
+    event_id: 104
+    code: T1070.001
+    attack_tactic: 'Defense evasion'
+    attack_technique: 'Indicator Removal on Host: Clear Windows Event Logs'
+    scale: 4
+-
+    event_id: 4625
+    code: T1110.001
+    attack_tactic: 'Credential access'
+    attack_technique: 'Brute Force: Password Guessing'
+    string_inserts: { login_type: [10, 3, 8, 10] }
+    scale: 4
+-
+    event_id: 4444
+    code: T1111
+    attack_tactic: tactic
+    attack_technique: technique
+    string_inserts: { insert1: null, insert2: null }
+    scale: 2
